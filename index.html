@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes Slideshow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-top flex">
+        <div class="prevBtn" onclick="plusSlide(-1)">&lt;</div>
+        <div class="slides">
+          <div class="slide active-slide">
+            <q
+              >But man is not made for defeat. A man can be destroyed but not
+              defeated.</q
+            >
+            <p>- Ernest Hemingway</p>
+          </div>
+          <div class="slide">
+            <q
+              >I have not failed. I've just found 10,000 ways that won't
+              work.</q
+            >
+            <p>- Thomas A. Edison</p>
+          </div>
+          <div class="slide">
+            <q
+              >I love you the more in that I believe you had liked me for my own
+              sake and for nothing else</q
+            >
+            <p>- John Keats</p>
+          </div>
+        </div>
+        <div class="nextBtn" onclick="plusSlide(1)">></div>
+      </div>
+      <div class="container-bottom flex">
+        <div class="dots flex">
+          <div class="dot active" onclick="currentSlide(1)"></div>
+          <div class="dot" onclick="currentSlide(2)"></div>
+          <div class="dot" onclick="currentSlide(3)"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

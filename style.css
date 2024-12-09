@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.container-top {
+  background-color: #f2f2f2;
+  position: relative;
+  padding: 15px;
+  font-size: 24px;
+  height: 20%;
+}
+
+.slide {
+  text-align: center;
+  display: none;
+}
+
+.active-slide {
+  display: block;
+}
+
+q {
+  display: inline-block;
+  max-width: 80%;
+}
+
+p {
+  margin-top: 15px;
+  color: #7695ed;
+}
+
+.container-bottom {
+  background-color: #dddddd;
+  height: 5%;
+}
+
+.dots {
+  gap: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dot:not(.active):hover {
+  background-color: #717171;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.prevBtn {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.nextBtn {
+  position: absolute;
+  right: 15px;
+  width: 30px;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+}
